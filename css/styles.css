@@ -1,10 +1,8 @@
-*{
+* {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
 }
-
-
 
 :root {
   --primarytext-color: #212121;
@@ -16,7 +14,7 @@
   --headersecondlogopart-color: #000000;
   --borderheadertransparent-color: #ececec;
   --portfoliobg-color: #eeeeee;
-  --thethirdbgcolor: #F5F4FA;
+  --thethirdbgcolor: #f5f4fa;
 }
 
 .visually-hidden {
@@ -81,7 +79,7 @@ p {
 /* Оформление Логотипа сервиса */
 
 .logo {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -89,620 +87,76 @@ p {
   text-decoration: none;
 }
 
-.logo.headerlogoitem {
-  display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 93px;
-
+.header {
+  height: 80px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--borderheadertransparent-color);
 }
 
-.headersecondlogo {
+.logo-primary {
   color: var(--headersecondlogopart-color);
 }
 
-.footersecond-logo {
-  color: var(--headerbackground-color);
-}
-
-/* Оформление Навигации */
-
-
-.site-nav.container.headermainbox .site-link.listbox {
- margin: 0;
- padding: 0;
-}
-
-
-
-.site-nav.headermainbox {
+.site-nav {
   display: flex;
   align-items: center;
+  gap: 0 92px;
 }
 
-.site-nav.headermainbox  {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: auto;
-
-}
-
-
-.site-link.listbox {
-  padding-right: 93px;
-}
-
-.site-contact.listbox {
+.site-nav__list {
+  list-style: none;
   display: flex;
-  padding: 0;
-  margin-left: auto;
 }
 
-.site-nav .link {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primarytext-color);
-  text-decoration: none;
-
+.site-nav__list-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.headermainbox {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid var(--borderheadertransparent-color);
-  background-color: var(--headerbackground-color);
-}
-
-.site-link {
-  display: flex;
-}
-
-.site-link .item + .item {
-  margin-left: 50px;
-}
-
-.site-link {
-  margin-left: 93px;
-}
-
-
-/*Добавляем эффект hover + focus на Панель Навигации */
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--logo-color);
-}
-
-/* Попытка сделать подсветку текущей страницы */
-
-.site-nav .link.current {
-  color: var(--logo-color);
-}
-
-/* Выбираем второе портфолио и назначаем ему цвет без отдельного класса */
-/*
-.site-nav .link[href*="portfolio"] {  Сначала я думал что портфолио
-    color: var(--logo-color)       просто само по себе другого цвета
-}
-*/
-
-/* Как же задолбали эти значки списков */
-
-.buttoncollection-list,
-.serviceprojects,
-.site-link,
-.site-contact,
-.footerlist-hideme,
-.serviceadv-list,
-.servicework-list,
-.teammembers-list {
-  list-style-type: none;
-}
-
-/* Контактная информация */
-
-.site-contact .site-contactlink {
-  color: var(--secondarytext-color);
+  padding: 15px 25px;
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-}
-
-.site-contact {
-  display: flex;
-}
-
-.site-contact .item + .item {
-  margin-left: 50px;
-}
-
-.site-contact {
-  margin-left: auto;
-}
-
-/* Это hover + focus элементы */
-
-.site-contactlink:hover,
-.site-contactlink:focus {
-  color: var(--logo-color);
-}
-
-/* Такой же метод что и с навигацией */
-/*
-.site-contact .site-contactlink[href*="tel"] {
-    color: var(--secondarytext-color);
-    
-}*/
-
-/* Portfolio.html */
-/* Центрируем Фильтр */
-/* <main> section start */
-
-.filterbutton-collection {
-  align-content: center;
-  background-color: var(--portfoliobg-color);
-}
-
-.filterbutton-collection.section {
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.uniteportfolio.container {
-  margin-top: 94px;
-  margin-bottom: -94px;
-  align-items: center;
-  display: flex;
-}
-
-/* Основные параметры кнопок */
-
-.button {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 32px;
-  padding-left: 32px;
-  letter-spacing: 0.03em;
-  color: var(--primarytext-color);
-}
-
-.buttoncollection-list  .button.filter {
-  padding-left: 22px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-right: 22px;
-      border-color: transparent;
-        border-radius: 4px;
-        background-color: var(--thethirdbgcolor);
-        color: var(--primarytext-color);
-
-
-}
-
-
-.buttoncollection-list.btnlistbox .btnitem + .btnitem {
-  padding-left: 8px;
-}
-
-
-/* Стиль основной кнопки "Заказать услугу" ---) "СТУДИЯ" */
-
-
-.hero .button {
-  background-color: var(--logo-color);
-  color: var(--headerbackground-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    display: inline-block;
-    margin-bottom: 200px;
-    padding: 10px 32px;
-}
-
-/* Отдельно ставим измененный курсор */
-
-.filterbutton-collection,
-.hero .pointer {
   cursor: pointer;
-}
-
-/* Ставим состояние наведения и TAB */
-
-.filterbutton-collection .button:hover,
-.filterbutton-collection .button:focus,
-.hero .button:hover,
-.hero .button:focus {
-  color: var(--headerbackground-color);
-  background-color: var(--logo-color);
-}
-
-/* Подготавливаем есто для нашего бокса с контентом */
-
-.filterbutton-collection.section {
-  background-color: var(--headerbackground-color);
-}
-
-
-
-.uniteportfolio .container {
-  display: flex;
-  background-color: var(--headerbackground-color);
-  margin-bottom: 50px;
-}
-
-.uniteportfolio .button:last-child {
-  margin-right: 8px;
-}
-
-.serviceprojects-photo {
-  margin-bottom: 20px;
-}
-
-.serviceprojects .serviceworkitem {
-  padding-bottom: 20px;
-    margin-bottom: 30px;
-    border: 1px solid var(--portfoliobg-color);
-
-}
-
-.btnlistbox {
-  display: inline-block;
-  outline-color: tomato;
-  /*    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 34px; */
-  background-color: var(--portfoliobg-color);
-  height: 54px;
-  left: 512px;
-  top: 174px;
-  justify-content: center;
-}
-
-
-
-.btnlistbox {
-  display: flex;
-  flex-direction: row;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: var(--headerbackground-color);
-}
-
-
-.serviceprojects.serviceworkbox {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: var(--background-color);
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding: 0;
-  margin: 94px auto;
-}
-
-.serviceworkitem {
-  justify-content: center;
-  display: block;
-}
-
-.serviceworkitem:not(:nth-child(3n)) {
-  margin: 0 30px 30px 0;
-}
-
-/* Ставим стили для наших заголовков */
-
-.biggertext {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  transition: all 0.2s ease;
   color: var(--primarytext-color);
-  margin-bottom: 4px;
 }
 
-
-.serviceworkitem__content  {
-  padding: 20px 24px;
-
+.site-nav__list-current {
+  color: var(--logo-color);
 }
 
-
-/* Ставим стили для наших текстов под заголовками */
-
-.text {
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: var(--secondarytext-color);
+.site-nav__list-link:hover,
+.site-nav__list-link:focus {
+  color: var(--logo-color);
 }
 
-
-/* Делаем задний фон для футера */
-
-.footermainsection {
-  background-color: var(--footerbackground-color);
-}
-
-.footerlogoitempix {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.footerlogoitem.container {
-  padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.footeradress {
-  display: block;
-}
-
-.footerbox .footeritem:not(:last-child) {
-  margin-bottom: 9px;
-
-}
-
-/* Ставим стили для контактов в футере */
-
-.footeradress-city {
-  font-size: 14px;
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--headerbackground-color);
-  text-decoration: none;
-}
-
-/* Ставим стили для контактов в футере */
-
-.footeradress-mail,
-.footeradress-phonenumber {
-  font-size: 14px;
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
-
-/* WEBSTUDIO DEVELOPMENT CSS */
-/* С этого места будет CSS "Студии" */
-/* Да, я начал делать ее вторую, потому - что полностью забыл про нее */
-
-/* Создаем стиль заголовок <main> */
-
-.hero .heromain-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  margin-bottom: 30px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--portfoliobg-color);
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-
-.heromain-title {
-  padding-bottom: 30px;
-}
-
-
-.heromain-title .button.pointer {
-  margin-bottom: 200px;
-display: inline-block;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-      padding: 10px px 32px;
-}
-
-.herobgimage-container {
-  max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-    padding-top: 200px;
-    text-align: center;
-  background-color: var(--footerbackground-color);
-}
-
-.hero.section {
-  background-color: var(--footerbackground-color);
-  padding: 0;
-  margin-bottom: 94px;
-}
-
-/* Создаем стиль заголовка "Преимущества сервиса" */
-
-.serviceadv-biggertext,
-.service-text {
-  display: block;
-  text-align: left;
-}
-
-.section.service-adventagetitle.section {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 94px;
-}
-
-.serviceadv-list {
+.header-contacts {
+  list-style: none;
   display: flex;
-  align-items: flex-start;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 0;
-  margin-bottom: auto;
 }
 
-.serviceadv-biggertext,
-.service-text {
-  width: 270px;
-  margin: 0;
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.serviceadv-list .servicelistitem + .servicelistitem {
-  padding-left: 30px;
-}
-
-.serviceadv-biggertext {
-  padding-bottom: 10px;
-}
-
-.service-adventagetitle .serviceadv-biggertext {
-  font-weight: 700;
+.header-contacts__item-link {
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Roboto';
+  text-decoration: none;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primarytext-color);
-}
-
-/* Создаем стиль текста "Преимущества сервиса" */
-
-.service-text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: all 0.2s ease;
   color: var(--secondarytext-color);
 }
 
-/* Создаем стиль заголовка "Примеры работ сервиса" и "Наша  команда" */
-
-.service-work.section {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 94px;
+.header-contacts__item-link:hover,
+.header-contacts__item-link:focus {
+  color: var(--logo-color);
 }
-
-.servicework-list.container {
-  margin-top: 0 auto;
-  padding-top: 0 auto;
-}
-
-.servicework-list .serviceworkitem:not(:last-child) {
-margin-right: 30px;
-}
-
-
-
-.servicework-biggertext {
-  padding-bottom: 0;
-  margin-bottom: 50px;
-}
-
-.serviceworkitem {
-      margin-bottom: 30px;
-        display: flex;
-        padding-bottom: 20px;
-        flex-direction: column;
-      }
-
-.servicework-list {
-  text-align: center;
-  align-items: center;
-  display: flex;
-}
-
-.service-work .servicework-biggertext,
-.teammembers .teammembers-biggertext {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primarytext-color);
-}
-
-
-.teammembers-item {
-    text-align: center;
-    padding-bottom: 30px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      border-radius: 4px;
-    
-}
-
-.teammembers.section {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 94px;
-    background-color: var(--thethirdbgcolor);
-
-}
-
-.teammembers-list  {
- align-items: center;
- display: flex;
- text-align: center;
-}
-
-.teammembers-biggertext {
-    padding-bottom: 50px;
-}
-
-.teammembers-list .teammembers-item + .teammembers-item {
-                margin-left: 30px;
-}
-
-.teammembers-item .teammembers-teamname {
-                padding-top: 30px;
-                padding-bottom: 10px;
-}
-
-
-
-/* Создаем стиль заголовка H3 "Наша команда" */
-
-.teammembers .teammembers-teamname {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--primarytext-color);
-}
-
-/* Создаем стиль текста секции "Наша Команда" */
-
-.teammembers .teammebers-teamdesc {
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--secondarytext-color);
-}
-
-/* Битва с валидатором // КОСТЫЛЬ */
-/*
-.filterbutton-collection,
-.serviceprojects .hideme {
-visibility: hidden;
-
-}
-*/
-/* ROUND 2 ---> FIGHT! */
-/*
-.serviceprojects, 
-.filterbutton-collection ul {
-    visibility: visible;
-}
-*/
-/* YOUR OPONNENT HAS DOWNED */
-/* FINISH HIM!!!!!!!!!!!! */
-/* FATALITYYYYYYYYYYYYYYY */
