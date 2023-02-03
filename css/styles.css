@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+/**
+  |============================
+  |  BG colors + Colors
+  |============================
+*/
+
 :root {
   --primarytext-color: #212121;
   --secondarytext-color: #757575;
@@ -15,7 +21,14 @@
   --borderheadertransparent-color: #ececec;
   --portfoliobg-color: #eeeeee;
   --thethirdbgcolor: #f5f4fa;
+  --primary-btncolor: #188CE8;
 }
+
+/**
+  |============================
+  |  Hide me
+  |============================
+*/
 
 .visually-hidden {
   position: absolute;
@@ -31,11 +44,25 @@
   overflow: hidden;
 }
 
+
+
+/**
+  |============================
+  |  Body settings
+  |============================
+*/
+
 body {
   color: var(--primarytext-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+
+/**
+  |============================
+  |  Reset settings
+  |============================
+*/
 
 img {
   display: block;
@@ -63,8 +90,13 @@ p {
   margin: 0;
 }
 
+/**
+  |============================
+  |  Section + Container settings
+  |============================
+*/
+
 .section {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -76,7 +108,11 @@ p {
   padding-left: 15px;
 }
 
-/* Оформление Логотипа сервиса */
+/**
+  |============================
+  |  Header Section
+  |============================
+*/
 
 .logo {
   font-family: 'Raleway';
@@ -160,3 +196,246 @@ p {
 .header-contacts__item-link:focus {
   color: var(--logo-color);
 }
+
+/**
+   |============================
+   |  Hero Section
+   |============================
+ */
+
+.hero__box {
+  background-color: var(--footerbackground-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: 0 auto;
+}
+
+.hero-box__title {
+  font-family: 'Roboto';
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--headerbackground-color);
+  margin-bottom: 30px;
+}
+
+.hero-box__primary-btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  padding: 10px 32px;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  color: var(--headerbackground-color);
+  background-color: var(--primary-btncolor);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+/**
+  |============================
+  |  Our benefits section
+  |============================
+*/
+
+.features {}
+
+.features__list {
+  display: flex;
+  text-align: center;
+  list-style: none;
+
+}
+
+.features__list-item {
+  width: 270px;
+}
+
+.features__list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature__list-title {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.feature__list-text {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: start;
+  color: var(--secondarytext-color);
+}
+
+/**
+  |============================
+  |  What we are doing?
+  |============================
+*/
+
+/* .desc-box {} */
+
+.subject {
+  font-family: 'Roboto';
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+
+}
+
+.desc-box__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.desc-box__list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+
+.desc-box__list-item {}
+
+/**
+  |============================
+  |  Teammembers 
+  |============================
+*/
+
+.teammembers {
+  background-color: var(--thethirdbgcolor);
+}
+
+.author {
+  /* background-color: var(--thethirdbgcolor); */
+  align-items: center;
+  text-align: center;
+}
+
+.subject {
+  /* padding-top: 94px; */
+}
+
+.author__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.userpic {
+  /* just in case of something on your mind */
+}
+
+.author__list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.author__list-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.author__list-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: auto;
+}
+
+.author__list-title {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.author__list-text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--secondarytext-color);
+
+}
+
+/**
+  |============================
+  |  Footer area
+  |============================
+*/
+
+.footer-box {
+  background-color: var(--footerbackground-color);
+  padding-top: 60px;
+}
+
+
+.logo.logo__footer {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.logo__secondary {
+  color: var(--headerbackground-color);
+}
+
+.footer-adress {
+  background-color: var(--footerbackground-color);
+}
+
+.footer-adress__list {
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  padding-bottom: 60px;
+
+}
+
+/* .footeradress__list-item {} */
+
+
+
+.footer-adress__list-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-adress__list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.primary-color {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--headerbackground-color);
+}
+
+
+
+/* .footeradress__list-link {} */
