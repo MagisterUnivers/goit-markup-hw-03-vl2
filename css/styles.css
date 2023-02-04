@@ -265,6 +265,17 @@ p {
   outline: none;
 }
 
+
+.hero-box__primary-btn:hover,
+.hero-box__primary-btn:focus {
+  color: var(--headerbackground-color);
+  background-color: var(--logo-color);
+  cursor: pointer;
+  outline: 1px solid var(--headerbackground-color);
+  transition: all 0.2s ease;
+  /* border-color: 1px solid var(--headerbackground-color); */
+}
+
 /**
   |============================
   |  Our benefits section
