@@ -205,6 +205,13 @@ p {
    |============================
  */
 
+.hero.section {
+  background-color: var(--footerbackground-color);
+  margin-bottom: 94px;
+  padding-bottom: 0;
+}
+
+
 .hero__box {
   background-color: var(--footerbackground-color);
   text-align: center;
@@ -323,6 +330,7 @@ p {
 
 .teammembers {
   background-color: var(--thethirdbgcolor);
+  padding-top: 94px;
 }
 
 .author {
@@ -428,6 +436,8 @@ p {
 
 }
 
+/*  FOR PIXEL PERFECT */
+
 .footer-address__list-item {
   margin-top: -2px;
 }
@@ -445,6 +455,8 @@ p {
   transition: all 0.2s ease;
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* MAKET - 9px */
 
 .footer-address__list-item:not(:last-child) {
   margin-bottom: 8px;
